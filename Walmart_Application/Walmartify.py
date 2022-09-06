@@ -18,22 +18,8 @@ class LocatorApi(WEBAPI):
         url = f'https://api.tomtom.com/search/2/poiSearch/{self.storequery}.json?lat={self.lat}&lon={self.long}&categorySet=7327%2C9361023%2C9361022%2C9361021%2C9361066%2C9361%2C7332005&view=Unified&relatedPois=off&key={self.apikey}'
         data=super()._download_url(url)
         for stores in data['results']:
-            #Exception in place to pass results that do not have a url specified
-            #try:
-            #Avoids duplicates to be placed into data file
-            if (stores['poi']['name'],(stores['poi']['url'], stores['address']['freeformAddress'])) not in self.stores:
-                distanceinMiles=stores['dist']/1609
-                r = requests.request("GET", 'https://gasprices.aaa.com/?state=CA/', headers={'User-Agent': 'Mozilla/5.0'})
-                soup = B.BeautifulSoup(r.text, 'html.parser')
-                ppg=soup.find_all('td')[1]
-                ppg=ppg.next_element.strip('$')
-                ppg=float(ppg)
-                gallons=distanceinMiles/25
-                cost=(gallons*ppg)*2
-                self.stores.append((stores['poi']['name'],(stores['poi']['url'], stores['address']['freeformAddress']), cost))
-        
-            #except:
-                #pass
+            self.stores.append((stores['poi']['name'],(stores['poi']['url'], stores['address']['freeformAddress'])))
+
 #Main Application
 class MainApplication:
     def __init__(self):
@@ -60,7 +46,6 @@ class WalmartScraper:
             currenturl=walmart[1][0]
             id_=re.compile(r'\d\d\d\d')
             currentlocation=walmart[1][1]
-            cost=round(walmart[2], 2)
             try:
                 currentstoreid=id_.search(currenturl).group()
                 currentzipcode=walmart[1][1].split(' ')[-1]
@@ -98,14 +83,14 @@ class WalmartScraper:
                         checker=filterquery.split()
                         if len(checker) == 1:
                             if checker[0].lower() in items['title'].lower():
-                                print("%-25s"%str((str(items['primaryOffer']['offerPrice'])+' + '+str(cost)+' = '+'%.2f'%(items['primaryOffer']['offerPrice']+cost))),' |'+items['title'])
+                                print("%-25s"%str((str(items['primaryOffer']['offerPrice'])+' '+items['title'])))
                         else:
                             comp=any([True if stuff.lower() in items['title'].lower() else False for stuff in checker])
                             if comp:
-                                print("%-25s"%str((str(items['primaryOffer']['offerPrice'])+' + '+str(cost)+' = '+'%.2f'%(items['primaryOffer']['offerPrice']+cost))),' |'+items['title'])
+                                print("%-25s"%str((str(items['primaryOffer']['offerPrice'])+' '+ items['title'])))
     
                     else:
-                        print("%-25s"%str((str(items['primaryOffer']['offerPrice'])+' + '+str(cost)+' = '+'%.2f'%(items['primaryOffer']['offerPrice']+cost))),' |'+items['title'])
+                        print("%-25s"%str((str(items['primaryOffer']['offerPrice'])+ ' '+items['title'])))
                 except KeyError:
                     print(items['title'], 'No Offer Found')
  
