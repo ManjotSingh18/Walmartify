@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 import urllib, json
 
-#PARENT CLASS FOR OPENWEATHER, LASTFM, EXTRACREDIT
+#Reversion
 class WEBAPI(ABC):
 #Parent function that encompasses urls and retrieves data from APIs that respond in Json wrapped data
     def _download_url(self, url_to_download: str) -> dict:
