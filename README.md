@@ -1,3 +1,3 @@
 # Walmart-Spreadsheet-Generator
  
- Work in Progress...
+A simple python based spread-sheet generator to compare prices across walamrts within a given radius.
