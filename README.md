@@ -1,3 +1,3 @@
 # Walmart-Spreadsheet-Generator
  
-A simple python based spread-sheet generator to compare prices across walamrts within a given radius (Work in Progress).
+A back-end program based in CMD used to collect data upon items and prices specified via search within Walmart Stores by proximity to the users location while dumping data into spreadsheets (work in progress).
