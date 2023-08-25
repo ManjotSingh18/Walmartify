@@ -3,7 +3,7 @@
 A back-end program based around command prompt used to collect data upon item prices specified via search within Walmarts by proximity to the users location while dumping data into spreadsheets for analysis.
 
 # Purpose
-Provide a visualization for item prices across local Walmarts in a standardized spreadsheet format for users to make a well-informed decision where to make purchases
+Provide a visualization for item prices across local Walmarts in a standardized spreadsheet format for users to make a well-informed decision where to make purchases based on price variances across locations
 
 # Features
 * Automatic price spreadsheet generation for multiple searches
@@ -23,12 +23,12 @@ Provide a visualization for item prices across local Walmarts in a standardized 
  2. Open terminal and navigate to the directory where the program is installed (ex. cd Path/To/Folder/Walmart_Application)
  3. Now run the command: python Walmartify.py
  4. The program should execute displying a input message showing how to proceed
- ![Logo](Walmart-Spreadsheet-Generator/Walmart_Application/README_Images/Start.png)
+ ![Logo](Walmart_Application/README_Images/Start.png)
  6. Either enter one of the commands listed or continue by specifying a product
  7. The results are now loaded into the products folder within the document folder of the user
- ![Logo](Walmart-Spreadsheet-Generator/Walmart_Application/README_Images/done.png)
+ ![Logo](Walmart_Application/README_Images/done.png)
  9. Open files for analysis through .xlsx viewer of choice
- ![Logo](Walmart-Spreadsheet-Generator/Walmart_Application/README_Images/sheets.png)
+ ![Logo](Walmart_Application/README_Images/sheets.png)
 
 # Technology
 ## Python
