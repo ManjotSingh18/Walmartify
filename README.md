@@ -23,9 +23,10 @@ Provide a visualization for item prices across local Walmarts in a standardized 
  2. Open terminal and navigate to the directory where the program is installed (ex. cd Path/To/Folder/Walmart_Application)
  3. Now run the command: python Walmartify.py
  4. The program should execute displying a input message showing how to proceed
- 5. Either enter one of the commands listed or continue by specifying a product
- 6. The results are now loaded into the products folder within the document folder of the user
- 7. Open files for analysis through .xlsx viewer of choice
+ ![Logo](Walmart-Spreadsheet-Generator/Walmart_Application/README_Images
+ 6. Either enter one of the commands listed or continue by specifying a product
+ 7. The results are now loaded into the products folder within the document folder of the user
+ 8. Open files for analysis through .xlsx viewer of choice
 
 # Technology
 ## Python
@@ -33,7 +34,7 @@ Provide a visualization for item prices across local Walmarts in a standardized 
 ## TomTom API
 * A free alternative to google map API to find walmart stores by user location
 ## PostMan 
-* A program utlized to make custom calls to Walmart API in a manner to avoid bot detection
+* A program utilized to make custom calls to Walmart API in a manner to avoid bot detection
 
 # Future and Contributions
 The program is finalized but is open-source for further features and I hope it will be used as a tool within other applications contributing to a greater purpose. 
