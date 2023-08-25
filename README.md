@@ -28,7 +28,7 @@ Provide a visualization for item prices across local Walmarts in a standardized 
  7. The results are now loaded into the products folder within the document folder of the user
  ![Logo](Walmart_Application/README_Images/done.png)
  9. Open files for analysis through .xlsx viewer of choice
-
+ ![Logo](Walmart_Application/README_Images/Sheets.png)
 # Technology
 ## Python
 * Used to develop framework of application and utilized to capture API data
