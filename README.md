@@ -6,7 +6,7 @@
 A back-end program based around a command prompt used to collect data upon item prices specified via search within Walmarts by proximity to the users' location while dumping data into spreadsheets for analysis.
 
 ## Purpose
-Provides a visualization for item prices across local Walmarts in a standardized spreadsheet format for users to make a well-informed decision about where to make purchases based on price variances across locations
+Provides a visualization for item prices across local Walmarts in a standardized spreadsheet format for users to make a well-informed decision about where to make purchases based on price variances across locations. Due to Walmart's recent removal of the search-by-store feature Walmartify is amplified as it shows prices and availability of products across nearby stores seamlessly.
 
 ## Features
 * Automatic price spreadsheet generation for multiple searches
