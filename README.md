@@ -3,16 +3,16 @@
 
 
 ## About
-A back-end program based around a command prompt used to collect data upon item prices specified via search within Walmarts by proximity to the users' location while dumping data into spreadsheets for analysis.
+Walmartify is a robust back-end program, accessible via the command prompt, designed to streamline the collection of item price data from local Walmart stores. This data is retrieved based on user-specified search criteria and proximity to their location. The program organizes this information, allowing users to export it into spreadsheets for analysis. Whether you're a business owner, researcher, or analyst, Walmartify simplifies the task of gathering and managing essential pricing data from local Walmart stores.
 
 ## Purpose
-Provides a visualization for item prices across Walmarts within a 20 mile radius in a standardized spreadsheet format for users to make a well-informed decision about where to make purchases based on price variances across locations. Due to Walmart's recent removal of the search-by-store feature Walmartify is amplified as it shows prices and availability of products across nearby stores seamlessly.
+The purpose of Walmartify is to offer users a visualization of item prices across Walmart stores located within a 20-mile radius. This information is presented in a standardized spreadsheet format, helping users to make well-informed purchasing decisions based on price variations across different store locations. In addition to price data, Walmartify also highlights product availability at various stores, ensuring users can easily locate the items they need. Walmart recently removed the search-by-store feature, making Walmartify even more valuable as it retrieves and presents prices and product availability across multiple nearby stores.
 
 ## Features
-* Automatic price spreadsheet generation for multiple searches
-* Streamlined execution due to being based in the terminal
-* TomTom API geocoding modified for store proximity
-* Clean modern data visualization
+* Automatically generates spreadsheets for multiple searches, simplifying data organization
+* Terminal-based interface for streamlined execution and ease of use.
+* TomTom API finds store proximity data for accurate results.
+* clean data visualization for ease of analysis.
 
 ## Requirements
 * Python (See requirements.txt for packages)
@@ -22,26 +22,27 @@ Provides a visualization for item prices across Walmarts within a 20 mile radius
 * Program to view .xslx files (Google Spreadsheets recommended)
 
 ## Installation and Usage
- 1. Download the repository, and extract it to the desired location
- 2. Open the terminal and navigate to the directory where the program is installed (e.g. cd Path/To/Folder/Walmart_Application)
- 3. Now run the command: python Walmartify.py
- 4. The program should execute displaying an input message showing how to proceed
+ 1. Download the repository and extract its contents.
+ 2. To install the required packages, navigate to the 'Walmartify/' directory in your terminal and execute the command: pip install -r requirements.txt.
+ 3. Navigate to the directory where the program is installed, for example, using the command: cd Path/To/Folder/Walmartify/Walmart_Application.
+ 4. Run the program by executing the command: python Walmartify.py.
+ 5. The program will execute and display an input message indicating how to proceed.
  ![Logo](Walmart_Application/README_Images/Start.PNG)
- 6. Either enter one of the commands listed or continue by specifying a product
- 7. The results are now loaded into the products folder within the document folder of the user
+ 6. Either enter one of the listed commands or continue by specifying a product.
+ 7. The results, which will be stored in the 'products' folder located in the user's 'Documents' directory.
  ![Logo](Walmart_Application/README_Images/done.png)
- 9. Open files for analysis through the .xlsx viewer of choice
+ 8. Open the generated files for analysis using your preferred .xlsx viewer.
 <p align="center">
   <img src="Walmart_Application/README_Images/sheet.PNG" width="80%" height="400" margin-left="auto" margin-right="auto">
 </p>
 
 ## Technology
 ### Python
-* Used to develop a framework of application and utilized to capture API data
+* Serves as the framework for developing the Walmartify application, and for capturing and processing API data.
 ### TomTom API
-* A free alternative to Google map API to find Walmart stores by user location
+* A cost-effective alternative to the Google Maps API, enabling precise location-based searches for Walmart stores.
 ### PostMan 
-* A program utilized to make custom calls to Walmart API in a manner to avoid bot detection
+* tool employed to make custom API calls to Walmart's services. This approach is designed to circumvent bot flase-positives.
 
 ## Future and Contributions
-The program is finalized but is open-source for further features and I hope it will be used as a tool within other applications contributing to a greater purpose. 
+The program is finalized and open-source, contributions for further enhancements and features are welcome.
