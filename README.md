@@ -14,6 +14,11 @@ The purpose of Walmartify is to offer users a visualization of item prices acros
 * TomTom API finds store proximity data for accurate results.
 * clean data visualization for ease of analysis.
 
+## Video Showcase
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=-3wCvsZRcR0"><img src="https://img.youtube.com/vi/-3wCvsZRcR0/maxresdefault.jpg" border-radius= "100px" width="50%" height="auto" border-radius="70%"></a></p>
+
 ## Requirements
 * Python (See requirements.txt for packages)
 * Python Interpreter
